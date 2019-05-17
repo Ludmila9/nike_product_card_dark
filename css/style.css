@@ -160,7 +160,6 @@ main{
 .product__about{
 	height: 27em;
 	width: 31%;
-/*	background-color: #FFF;*/
 	display: inline-block;
 	float: right;
 	padding-right: 30px;
@@ -242,13 +241,11 @@ main{
 
 .range select:hover{
 	background-color: #4f5560;
+	color: #FFF;
 	opacity: 0.5;
 }
 
 .range
-
-
-
 
 
 /*.range select:focus {
