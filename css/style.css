@@ -1,0 +1,319 @@
+
+@font-face {
+    font-family: 'Museo Sans Rounded100';
+    src: url('museosansrounded-100-webfont.woff2') format('woff2'),
+         url('museosansrounded-100-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body{
+	font-family: 'Museo Sans Rounded100', sans-serif;
+	background-color: ##CFCFD1;
+	background: url(../img/body-bg1.png), 
+					url(../img/body-bg2.png), 
+					url(../img/body-bg3.png);
+	-webkit-background-size: cover, cover, cover;
+	     -o-background-size: cover, cover, cover;
+	        background-size: cover, cover, cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	max-width: 100vw;
+}
+
+section{
+	width: 100%;
+    height: 100%;
+    background: rgba(17, 26, 40, 0.25);
+    display: flex;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+
+
+/*MAIN*/
+
+
+main{
+	height: 27em;
+	width: 50em;
+	background-color: #111a28;
+	-webkit-border-radius: 15px;
+	        border-radius: 15px;
+}
+
+.container{
+	background-color: #111a28;
+	-webkit-border-radius: 15px;
+	        border-radius: 15px;
+	 -webkit-box-shadow: 0 0 60px 0 rgba(17, 26, 40, 1);
+            box-shadow: 0 0 60px 0 rgba(17, 26, 40, 1);
+}
+
+
+/*PRODUCT*/
+
+
+.product{
+	height: 27em;
+	width: 65%;
+	display: inline-block;
+}
+
+.logo{
+	position: absolute;	
+	margin: 20px;
+}
+
+.product__img{
+	margin: 156px 70px 0;
+	width: 23em;
+}
+
+.buttons-owl{
+	margin: 50px auto;
+	display: flex;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+
+.buttons-owl span{
+	display: flex;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	   -webkit-align-items: center;
+	           align-items: center;
+	height: 19px;
+	width: 19px;
+	padding: 0;
+	margin: 1px;
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
+	outline-style: none;
+}
+
+.owl-dot{
+	height: 9px;
+	width: 9px;
+	padding: 0;
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
+	border: none;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.owl-dot:hover,
+.owl-dot:active{
+	height: 13px;
+	width: 13px;
+	border: 1.5px solid transparent;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.buttons-owl span:first-of-type .owl-dot{
+	background-color: #1f273f;
+}
+
+/*.buttons-owl span:first-of-type .owl-dot:hover,
+.buttons-owl span:first-of-type .owl-dot:active{
+	border-color: rgba(73, 80, 93, 0.2);
+}*/
+
+.buttons-owl span:nth-of-type(2) .owl-dot{
+	background-color: #fff;
+}
+
+/*.buttons-owl span:nth-of-type(2) .owl-dot:hover,
+.buttons-owl span:nth-of-type(2) .owl-dot:active{
+	border-color: rgba(31, 39, 63, 0.6);
+}*/
+
+.buttons-owl span:nth-of-type(3) .owl-dot{
+	background-color: #ed3333;
+}
+
+/*.buttons-owl span:nth-of-type(3) .owl-dot:hover,
+.buttons-owl span:nth-of-type(3) .owl-dot:active{
+	border-color: rgba(235, 146, 146, 0.2);
+}*/
+
+.buttons-owl span:last-of-type .owl-dot{
+	background-color: #29e3ea;
+}
+/*
+.buttons-owl span:last-of-type .owl-dot:hover,
+.buttons-owl span:last-of-type .owl-dot:active{
+	border-color: rgba(155, 239, 242, 0.2);
+}*/
+
+
+/*PRODUCT  ABOUT*/
+
+
+.product__about{
+	height: 27em;
+	width: 31%;
+/*	background-color: #FFF;*/
+	display: inline-block;
+	float: right;
+	padding-right: 30px;
+}
+
+.product__about h1{
+	font-size: 28px;
+	font-weight: 100;
+	color: #8B8F95;
+	margin-top: 77px;
+}
+
+.product__about p{
+	font-size: 14px;
+	font-weight: 100;
+	color: #8B8F95;
+	margin-top: 10px;
+}
+
+.stars{
+	display: flex;
+	margin: 26px 0;
+}
+
+.stars img{
+	width: 12px;
+	height: 12px;
+}
+
+.stars img + img{
+	padding-left: 1px;
+}
+
+.range{
+	margin: 26px 0;
+}
+
+.select-side{
+	pointer-events: none;
+	position: relative;
+}
+
+.fa-angle-down{
+	content: '';
+	font-size: 1.2em;
+	font-weight: 100;
+	padding: 0 25px;
+	margin: auto 0;
+	color: #8B8F95;
+	border: none;
+	position: absolute;
+}
+
+.select-side i:first-of-type{
+	top: 5px;
+	left: 23px;
+}
+
+.select-side i:last-of-type{
+	top: 5px;
+	left: 98px;
+}
+
+.range select{
+	height: 32px;
+	width: 70px;
+	font-size: 14px;
+	color: #8B8F95;
+	background-color: #111a28;
+	border: 1px solid #4F5560;
+	padding-left: 11px;
+	transition: background-color .3s ease-in;
+	outline-style: none;
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
+
+}
+
+.range select:hover{
+	background-color: #4f5560;
+	opacity: 0.5;
+}
+
+.range
+
+
+
+
+
+/*.range select:focus {
+      outline: none;
+      box-shadow: none;
+      border: solid 1px red;
+    }
+*/
+
+/*.range option{
+	  background: #f00; 
+  color: #fff; 
+  box-shadow: inset 20px 20px #f00
+}*/
+
+.range option:checked:after {
+    content: attr(title);
+    background: #666;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    border: none;
+}
+
+/*.range option:focus{
+	background-color: red;
+	opacity: 0.5;
+}
+
+.range option:active{
+	background-color: red;
+	opacity: 0.5;
+}
+
+.range option:checked{
+	background-color: red;
+	opacity: 0.5;
+}
+
+.range option:not(:checked) { 
+    background-color: white; 
+    color:#000;
+}*/
+
+
+
+.add{
+	margin: 26px 0;
+}
+
+.btn_add{
+	height: 40px;
+	width: 184px;
+	color: #8B8F95;
+	font-size: 14px;
+	background-color: #2A3544;
+	border: 2px solid #4F5560;
+	margin: 0;
+	padding: 0;
+	opacity: 0.5;
+	outline-style: none;
+	transition: background-color .3s ease-in;
+}
+
+.btn_add:hover{
+	background-color: transparent;	
+}
