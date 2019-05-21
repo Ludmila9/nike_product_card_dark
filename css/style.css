@@ -55,7 +55,7 @@ main{
 
 
 /*PRODUCT*/
-
+/*PRODUCT__COLOR*/
 
 .product{
 	height: 27em;
@@ -73,85 +73,64 @@ main{
 	width: 23em;
 }
 
-.buttons-owl{
-	margin: 50px auto;
+.product__color{
+	margin: 70px auto 20px;
 	display: flex;
 	-webkit-justify-content: center;
 	        justify-content: center;
 }
 
-.buttons-owl span{
-	display: flex;
-	-webkit-justify-content: center;
-	        justify-content: center;
-	   -webkit-align-items: center;
-	           align-items: center;
-	height: 19px;
-	width: 19px;
-	padding: 0;
-	margin: 1px;
-	-webkit-border-radius: 50%;
-	        border-radius: 50%;
-	outline-style: none;
+label {
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    padding-left: 11px;
+    margin-right: 11px;
+    justify-content: center;
+	align-items: center;
 }
 
-.owl-dot{
-	height: 9px;
-	width: 9px;
-	padding: 0;
-	-webkit-border-radius: 50%;
-	        border-radius: 50%;
-	border: none;
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
+input[type=radio] {
+    display: none;
 }
 
-.owl-dot:hover,
-.owl-dot:active{
-	height: 13px;
-	width: 13px;
-	border: 1.5px solid transparent;
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
+label:before {
+    content: "";
+    display: flex;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 9px;
+    margin-left: 9px;
+    position: absolute;
+    left: 0;
+    background-color: #1f273f;
+    transition: all 0.3s ease;
 }
 
-.buttons-owl span:first-of-type .owl-dot{
-	background-color: #1f273f;
+.white:before{
+    background-color: white;
 }
 
-/*.buttons-owl span:first-of-type .owl-dot:hover,
-.buttons-owl span:first-of-type .owl-dot:active{
-	border-color: rgba(73, 80, 93, 0.2);
-}*/
-
-.buttons-owl span:nth-of-type(2) .owl-dot{
-	background-color: #fff;
+.tomato:before{
+    background-color: #ed3333;
 }
 
-/*.buttons-owl span:nth-of-type(2) .owl-dot:hover,
-.buttons-owl span:nth-of-type(2) .owl-dot:active{
-	border-color: rgba(31, 39, 63, 0.6);
-}*/
-
-.buttons-owl span:nth-of-type(3) .owl-dot{
-	background-color: #ed3333;
+.aqua:before{
+    background-color: #29e3ea;
 }
 
-/*.buttons-owl span:nth-of-type(3) .owl-dot:hover,
-.buttons-owl span:nth-of-type(3) .owl-dot:active{
-	border-color: rgba(235, 146, 146, 0.2);
-}*/
-
-.buttons-owl span:last-of-type .owl-dot{
-	background-color: #29e3ea;
+input[type=radio]:hover + label:before,
+input[type=radio]:active + label:before,
+input[type=radio]:checked + label:before{
+    text-align: center;
+    line-height: 12px;
+    box-shadow: 0 0 0 1.5px #7e838b;
+    width: 12px;
+    height: 12px;
+	margin-right: 8px;
+	margin-left: 8px;
 }
-/*
-.buttons-owl span:last-of-type .owl-dot:hover,
-.buttons-owl span:last-of-type .owl-dot:active{
-	border-color: rgba(155, 239, 242, 0.2);
-}*/
 
 
 /*PRODUCT  ABOUT*/
@@ -245,22 +224,6 @@ main{
 	opacity: 0.5;
 }
 
-.range
-
-
-/*.range select:focus {
-      outline: none;
-      box-shadow: none;
-      border: solid 1px red;
-    }
-*/
-
-/*.range option{
-	  background: #f00; 
-  color: #fff; 
-  box-shadow: inset 20px 20px #f00
-}*/
-
 .range option:checked:after {
     content: attr(title);
     background: #666;
@@ -270,28 +233,6 @@ main{
     left: 0;
     border: none;
 }
-
-/*.range option:focus{
-	background-color: red;
-	opacity: 0.5;
-}
-
-.range option:active{
-	background-color: red;
-	opacity: 0.5;
-}
-
-.range option:checked{
-	background-color: red;
-	opacity: 0.5;
-}
-
-.range option:not(:checked) { 
-    background-color: white; 
-    color:#000;
-}*/
-
-
 
 .add{
 	margin: 26px 0;
